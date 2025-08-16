@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Krishna Janmashtami शुभकामनाएँ</title>
+    <meta
+      name="description"
+      content="Janmashtami शुभकामनाएँ, स्टेटस वीडियो, इमेज स्लाइडशो और भजन—एक ही पेज में."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg1: #0b1026;
+        --bg2: #1b1f3a;
+        --gold: #ffd166;
+        --pink: #ff8fab;
+        --cyan: #67e8f9;
+        --violet: #a78bfa;
+        --green: #8ce99a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      /* ===== Interactive background (animated gradient + twinkles) ===== */
+      body {
+        font-family: "Poppins", system-ui, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+        color: #fff;
+        background: radial-gradient(
+            1000px 500px at 80% -10%,
+            #202763 0%,
+            transparent 60%
+          ),
+          radial-gradient(800px 400px at -10% 20%, #231942 0%, transparent 60%),
+          linear-gradient(180deg, var(--bg1), var(--bg2));
+        overflow-x: hidden;
+        position: relative;
+      }
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        inset: -10%;
+        pointer-events: none;
+        background: radial-gradient(
+            120px 60px at 20% 10%,
+            rgba(167, 139, 250, 0.08),
+            transparent 60%
+          ),
+          radial-gradient(
+            180px 90px at 80% 20%,
+            rgba(103, 232, 249, 0.06),
+            transparent 60%
+          ),
+          radial-gradient(
+            200px 100px at 60% 80%,
+            rgba(255, 209, 102, 0.07),
+            transparent 60%
+          );
+        animation: floatOrbs 18s linear infinite alternate;
+        z-index: 0;
+      }
+      body::after {
+        background-image: radial-gradient(
+            2px 2px at 10% 20%,
+            rgba(255, 255, 255, 0.35),
+            transparent 40%
+          ),
+          radial-gradient(
+            2px 2px at 30% 70%,
+            rgba(255, 255, 255, 0.35),
+            transparent 40%
+          ),
+          radial-gradient(
+            2px 2px at 80% 30%,
+            rgba(255, 255, 255, 0.35),
+            transparent 40%
+          ),
+          radial-gradient(
+            2px 2px at 60% 60%,
+            rgba(255, 255, 255, 0.35),
+            transparent 40%
+          );
+        animation: twinkle 3.6s ease-in-out infinite;
+        mix-blend-mode: screen;
+      }
+      @keyframes floatOrbs {
+        0% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        100% {
+          transform: translate3d(2%, -2%, 0) scale(1.05);
+        }
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+
+      .container {
+        max-width: 1050px;
+        margin-inline: auto;
+        padding: 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Header */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: linear-gradient(
+          180deg,
+          rgba(13, 15, 40, 0.75),
+          rgba(13, 15, 40, 0.25)
+        );
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: conic-gradient(
+          from 120deg,
+          #81ecec,
+          #a29bfe,
+          #fdcb6e,
+          #00cec9
+        );
+      }
+      .brand h1 {
+        font-weight: 800;
+        margin: 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+      }
+
+      /* Hero */
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        align-items: center;
+        padding: 40px 0;
+      }
+      .hero h2 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3rem;
+        margin: 4px 0;
+        color: var(--gold);
+        text-shadow: 0 6px 30px rgba(255, 209, 102, 0.25);
+      }
+      .hero p.lead {
+        font-size: 1.05rem;
+        opacity: 0.92;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 22px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+      .card.pad {
+        padding: 20px;
+      }
+      /* new command  */
+      .lines-with-krishna {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 30px 0;
+      }
+
+      .lines {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .krishna-pic img {
+        max-width: 300px;
+        border-radius: 18px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      /* Five lines */
+      .five-lines {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+        position: relative;
+      }
+      .line {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+      }
+      .line .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--gold), var(--pink));
+        margin-top: 0.5rem;
+        box-shadow: 0 0 12px rgba(255, 209, 102, 0.6);
+      }
+
+      /* Right-side animated Matki near five lines */
+      .matki {
+        position: absolute;
+        right: -10px;
+        top: -6px;
+        width: 120px;
+        opacity: 0.9;
+        transform-origin: top center;
+        animation: swing 3.6s ease-in-out infinite;
+        filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+      }
+      @keyframes swing {
+        0%,
+        100% {
+          transform: rotate(-4deg) translateY(0);
+        }
+        50% {
+          transform: rotate(4deg) translateY(4px);
+        }
+      }
+
+      /* PHOTOS (above videos): 4 in one row */
+      .photos-grid.card {
+        margin-top: 10px;
+      }
+      .photos-grid h3 {
+        margin: 0 0 10px 0;
+      }
+      .grid4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+      }
+      .grid4 .ph {
+        aspect-ratio: 4/3;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      .grid4 .ph img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+      .grid4 .ph:hover img {
+        transform: scale(1.06);
+      }
+      .grid4 .ph::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.25));
+      }
+
+      /* Videos */
+      .media-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+        margin: 24px 0;
+      }
+      .video-wrap {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #000;
+      }
+      .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* Music controls (unused UI kept for future) */
+      .controls {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .btn {
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 999px;
+        padding: 10px 14px;
+        font-weight: 600;
+        color: #0b1026;
+        background: linear-gradient(90deg, var(--gold), #ffd6a5);
+        box-shadow: 0 8px 20px rgba(255, 209, 102, 0.3);
+      }
+      .btn.secondary {
+        background: linear-gradient(90deg, var(--violet), #c4b5fd);
+        color: #0c1027;
+      }
+      .note {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      /* Footer */
+      footer {
+        margin: 40px 0 10px;
+        opacity: 0.8;
+        text-align: center;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .media-grid {
+          grid-template-columns: 1fr;
+        }
+        .grid4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .matki {
+          position: static;
+          display: block;
+          margin-left: auto;
+          margin-top: 10px;
+        }
+      }
+      @media (max-width: 520px) {
+        .grid4 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Decorative elements (kept from your code) */
+      .peacock {
+        position: absolute;
+        right: -40px;
+        top: -40px;
+        width: 220px;
+        opacity: 0.25;
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+      }
+      .flute {
+        position: absolute;
+        left: -30px;
+        bottom: -30px;
+        width: 240px;
+        opacity: 0.2;
+      }
+      .shine {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          600px 200px at 70% 10%,
+          rgba(255, 255, 255, 0.05),
+          transparent
+        );
+      }
+
+      /* Confetti (canvas layer) */
+      canvas#confetti {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="confetti"></canvas>
+    <header>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+        "
+      >
+        <div class="brand">
+          <div class="logo" aria-hidden="true">🪔</div>
+          <h1>श्रीकृष्ण जन्माष्टमी 2025</h1>
+        </div>
+        <div style="font-size: 0.95rem; opacity: 0.9">✨ जय श्रीकृष्ण</div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section
+        class="hero card pad"
+        style="position: relative; overflow: hidden"
+      >
+        <img
+          class="peacock"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='50%25' r='70%25'%3E%3Cstop stop-color='%2367e8f9'/%3E%3Cstop offset='1' stop-color='%230b1026' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='128' cy='128' r='120' fill='url(%23g)'/%3E%3C/svg%3E"
+          alt=""
+        />
+        <img
+          class="flute"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 160'%3E%3Crect x='0' y='70' width='640' height='20' rx='10' fill='%23ffd166'/%3E%3Cg fill='%23996a00'%3E%3Ccircle cx='80' cy='80' r='6'/%3E%3Ccircle cx='140' cy='80' r='6'/%3E%3Ccircle cx='200' cy='80' r='6'/%3E%3Ccircle cx='260' cy='80' r='6'/%3E%3Ccircle cx='320' cy='80' r='6'/%3E%3Ccircle cx='380' cy='80' r='6'/%3E%3Ccircle cx='440' cy='80' r='6'/%3E%3Ccircle cx='500' cy='80' r='6'/%3E%3C/g%3E%3C/svg%3E"
+          alt=""
+        />
+        <div class="shine" aria-hidden="true"></div>
+
+        <div>
+          <p class="lead">
+            मेरी ओर से—<strong>Mohit Parmar</strong> की तरफ़ से—आप सभी को
+            हार्दिक
+          </p>
+          <h2>श्रीकृष्ण जन्माष्टमी की शुभकामनाएँ! 🌼</h2>
+
+          <!-- <div class="five-lines">
+            <!-- Right side animated Matki -->
+          <!--<img class="matki" src="photo/p1.jpg" alt="matki" />
+
+            <div class="line">
+              <span class="dot"></span
+              ><span>नंद के आनंद भयो, जय कन्हैया लाल की।</span>
+            </div>
+            <div class="line">
+              <span class="dot"></span
+              ><span>माखन-चोर की मुस्कान से जग में प्रेम पसर जाए।</span>
+            </div>
+            <div class="line">
+              <span class="dot"></span
+              ><span>बंसी की मधुर तान से जीवन में सुख-शांति आए।</span>
+            </div>
+            <div class="line">
+              <span class="dot"></span
+              ><span>गोविंद के चरणों में समर्पण से सारी बाधाएँ कट जाएँ।</span>
+            </div>
+            <div class="line">
+              <span class="dot"></span
+              ><span>जय श्रीकृष्ण! आपका जीवन सदैव मंगलमय हो।</span>
+            </div>
+          </div> -->
+
+          <!-- Janmashtami 5 lines with Krishna Image -->
+          <section class="lines-with-krishna">
+            <div class="lines">
+              <p>✨ नंद के आनंद भयो जय कन्हैया लाल की ✨</p>
+              <p>🌼 हर घर गूंजे बांसुरी की मधुर तान 🌼</p>
+              <p>🪔 माखन चोर नंदलाल आए, लेकर खुशियाँ ढेर सारी 🪔</p>
+              <p>🌸 भक्तों के कष्ट हरने वाले श्रीकृष्ण का जन्मोत्सव 🌸</p>
+              <p>🙏 जय श्रीकृष्ण 🙏</p>
+            </div>
+            <!-- <div class="krishna-pic">
+              <img src="photo/p3.jpg" alt="Bal Krishna" />
+            </div> -->
+          </section>
+        </div>
+      </section>
+
+      <!-- ===== PHOTOS SECTION (ABOVE VIDEOS) ===== -->
+      <section class="photos-grid card pad">
+        <h3 style="margin: 0 0 10px 0">📸 कृष्णा गैलरी</h3>
+        <div class="grid4" id="photoGrid">
+          <!-- JS से 4 images add होंगी (photo/p1.jpg ... p4.webp) -->
+        </div>
+      </section>
+
+      <!-- ===== VIDEOS SECTION (2 videos) ===== -->
+      <section class="media-grid">
+        <div class="video-wrap card">
+          <div class="badge">🎬 Janmashtami Status 1</div>
+          <video class="statusVid" playsinline autoplay muted loop controls>
+            <source src="video/v1.mp4" type="video/webm" />
+            आपका ब्राउज़र वीडियो नहीं चला पा रहा है।
+          </video>
+        </div>
+
+        <div class="video-wrap card">
+          <div class="badge">🎬 Janmashtami Status 2</div>
+          <video class="statusVid" playsinline muted loop controls>
+            <source src="video/v2.mp4" type="video/webm" />
+            आपका ब्राउज़र वीडियो नहीं चला पा रहा है।
+          </video>
+        </div>
+      </section>
+
+      <footer>
+        Crafted with ❤️ | जय श्रीकृष्ण | शेयर करें और शुभकामनाएँ भेजें
+      </footer>
+    </main>
+
+    <script>
+      // ====== CONFIG: same links you provided ======
+      const imageURLs = [
+        "photo/p1.jpg",
+        "photo/p2.jpg",
+        "photo/p3.jpg",
+        "photo/p4.webp",
+      ];
+
+      // ====== Render 4 photos in one row ======
+      const photoGrid = document.getElementById("photoGrid");
+      imageURLs.slice(0, 4).forEach((url, i) => {
+        const wrap = document.createElement("div");
+        wrap.className = "ph";
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = `Krishna photo ${i + 1}`;
+        wrap.appendChild(img);
+        photoGrid.appendChild(wrap);
+      });
+
+      // ====== VIDEOS: ensure only one plays (others pause+mute) ======
+      const vids = Array.from(document.querySelectorAll("video.statusVid"));
+
+      // Start: keep only first autoplaying; pause others
+      window.addEventListener("DOMContentLoaded", () => {
+        vids.forEach((v, idx) => {
+          if (idx === 0) {
+            // first keeps autoplay muted
+            v.play().catch(() => {});
+          } else {
+            v.pause();
+            v.currentTime = 0;
+            v.muted = true;
+          }
+        });
+      });
+
+      // On play event: pause & mute all others, unmute current
+      function soloPlay(current) {
+        vids.forEach((v) => {
+          if (v !== current) {
+            v.pause();
+            v.muted = true;
+          }
+        });
+        // user intent => unmute the one they played
+        current.muted = false;
+        current.play().catch(() => {});
+      }
+
+      vids.forEach((v) => {
+        v.addEventListener("play", () => soloPlay(v));
+        // If user clicks mute/unmute, keep others muted.
+        v.addEventListener("volumechange", () => {
+          if (!v.muted) {
+            vids.forEach((o) => {
+              if (o !== v) o.muted = true;
+            });
+          }
+        });
+        // If user clicks on video to start (gesture), make sure it has focus
+        v.addEventListener("click", () => {
+          if (v.paused) v.play().catch(() => {});
+          else v.pause();
+        });
+      });
+
+      // ====== Confetti (as-is) ======
+      const canvas = document.getElementById("confetti");
+      const ctx = canvas.getContext("2d");
+      let W, H;
+      const confetti = [];
+      function resize() {
+        W = canvas.width = innerWidth;
+        H = canvas.height = innerHeight;
+      }
+      addEventListener("resize", resize);
+      resize();
+      function makePiece() {
+        return {
+          x: Math.random() * W,
+          y: -20,
+          s: Math.random() * 6 + 4,
+          r: Math.random() * 360,
+          v: Math.random() * 1.5 + 0.5,
+          o: Math.random() * 0.6 + 0.3,
+        };
+      }
+      for (let i = 0; i < 70; i++) confetti.push(makePiece());
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        confetti.forEach((p) => {
+          p.y += p.v;
+          p.r += p.v * 5;
+          if (p.y > H + 20) {
+            p.y = -20;
+            p.x = Math.random() * W;
+          }
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.r * Math.PI) / 180);
+          const g = ctx.createLinearGradient(-10, -10, 10, 10);
+          g.addColorStop(0, "#ffd166");
+          g.addColorStop(1, "#a78bfa");
+          ctx.fillStyle = g;
+          ctx.globalAlpha = p.o;
+          ctx.fillRect(-8, -8, 16, 16);
+          ctx.restore();
+        });
+        requestAnimationFrame(draw);
+      }
+      draw();
+
+      // Pause videos when tab hidden (QoL)
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) vids.forEach((v) => v.pause());
+      });
+    </script>
+  </body>
+</html>
